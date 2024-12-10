@@ -1,262 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-<title>Kingdom</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
+  <meta charset="UTF-8">
+  <title>CodePen - Shrinking header on scroll without Javascript</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
+<!-- partial:index.partial.html -->
+<!-- Sticky header -->
+<header class="header-outer">
+	<div class="header-inner responsive-wrapper">
+		<div class="header-logo">
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEn0lEQVR4nO2Za4hWRRjHf2tlZbpk1JZEF8PQLLCrLsh2+RJFZEGoZdGd0ogigq5fMgyhsBsFXYz6Ylsf+pBtUGFlZWW02MXMilzbLtuWRhdKK2tPDPwPPBzOc87M+666xvuHYdmZ/8w8/zMzz/PMvNBCCy3sSLQBLwFZRXlL3NHA/cCPEdyG8HaNIbasBPYwfS+L7HcScF0kd7BRgdkwlAudsW8v4Z7ZoB21iCUeD3xRGPw74JqKPmOB9wz/VWCUw10h7kRTt9v2ELIzcLFs+3RXF7JWtgVBu7SQb2XblGaEBO80E7hNLvYXYBnQ3oRhJwCLddY+B06v4T8j265qRsiHjvcIRkxLiDMzgHuAvpKxhoClwL5O/wXiLWtGyJuq/1N7dDrwgeq2AJdHjP1GwfCwVR4ETgFuAraqfgOwV0n/qWr/JkZIPtjehfqDgK/U1q2vGyZ73Bj2JDAmMtg+UeJ6j9KqZM6q7K62bTFC8kg6wfkiP6v9TlN/EfC7cY1HO2MH4Q8YMc8B4037EWalypDHkX9ihHwi8nFO+xn6IkMFN3gM8Jn6/grMrphjHvCbuF8CJ6r+bNW97PQbpfZ/Y4Q8L/LcCs6V4vwNnFaI3N3miz+q5LAMhwPvmq1yhzxi+H+J06fNOIVa3C3ywhrefeJtBo4stF0L/KX21cChzhh7aqvl5+IP/b3C4XekxLm5Ir5Ywwv7dbm4IQbsV2ifbpzD5orkMOAc4CdjZKdz0Neo/f0YIRNF/iGCO9YMvrJkGwVxPWZfL9IHKENYtdeAdY7rzfOsPq1MLZL2IXCwSR2ecsa7VZ4mz3gPJB3rUqJ6wP4pnsGk9Ln7DXeOMpwKfC/OAHAyaVidsq0QMXT4KHGiWRI/VOHxJmgL5p7qZq1YDDpSE9qsIiDW4Qb13eoc2PzQLjaeankhKFahISGN4mH13wRMquCdZTxVf4XwnSYkeKUXTLriZbIBh5igGJLR64fTtpxc5uLCfn5d56jKBbab29wr2k5UBMWHzLxPy62n2uYe9jLvMM0MtrZmwMNMAhpSlTqcb/IvL/Gssi3JO9xiYkyMmBm6qwTujRFzTzFJa3DncxJsK4VHzl3nArN16sTMlvDgms+NmHsfk3huSrAtWki7st1tOsAHAB+Lt77GXedZ7RblYHVYJP6z20PIeSanypEi5hET1YO3qjr8g+LObEZIm0NeqrpwTiw6IrfZaCWFmR4yxjm8S8XpddqjhXSKGFJwi69VH1IRGhQz3twie5xMeE3NI1y0kCXOLW2VufyEr1ZcxVk6P5nebD1M0iHOdKmy6FL9oLZYU0I2OpebMXolyUzK3iXB/aY+09NRFboUyTOnLKzoGy0kv1tMdtovMSm7Lf0S1RmZ0V5gYowtG2vcebSQ3IdfXcGZqse5vkTjhwNZrJD5JucZichihUw2P9qMRGSp7jfs1ZGILNX93ps4QYfc7jsVj3Jev171HVfSvkrZQLfZ9knut5lyV2HMY4HHzOODV3pKgqTHTX76TynrleWm9us1QTJzynytykBEnBoWzNNk1ogBrUhYGQ/ht/cNjogdYngLLfyf8R8BiVTbyJCvkgAAAABJRU5ErkJggg==" alt="dota">
+		</div>
+		<nav class="header-navigation">
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Blog</a>
+			<a href="#">Contact Us</a>
+			<button>Menu</button>
+		</nav>
+	</div>
+</header>
+<!-- Content -->
+<main class="main">
+	<div class="main-content responsive-wrapper">
+		<article class="widget">
+			<h2>DOTA 😎</h2>
+			<p>Dynamic Teamplay: Work together with your team to outsmart and outmaneuver opponents in real-time battles.
+			<p>
+       
+        <strong>A New Era of Competitive Strategy Gaming</strong>
+        
+        Dota is a cutting-edge multiplayer online battle arena (MOBA) game that redefines the genre with its depth, strategy, and team-oriented gameplay. Players take control of powerful heroes, each with unique abilities and playstyles, to battle it out in intense 5v5 matches. The goal? <strong>Destroy the enemy team's Ancient while defending your own.</strong>
+			<p></p>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">ДІМ</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">КІМНАТА</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">БРОНЬ</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">КОНТАКТИ</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">БІЛЬШЕ <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Скоро..</a>
-        <a href="#" class="w3-bar-item w3-button">Скоро..</a>
-        <a href="#" class="w3-bar-item w3-button">Скоро..</a>
-      </div>
+
+		</article>
+	</div>
+</main>
+<div class="container">
+  <div class="item">
+    <div class="quote">
+      <p>Take any hero u want!<span>125 heroes</span></p>
     </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+  <div class="item">
+    <div class="quote">
+      <p>Train yourself!<span>Any hero can be mastered</span></p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="quote">
+        <p>Rating games!<span>Be the best</span></p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="quote">
+      <p>Many items!<span>Upgrate your hero</span></p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="quote">
+      <p>Help your teammates!<span>Teamplay</span></p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="quote">
+      <p>Don't be a cancer!<span> Be a good player</span></p>
+    </div>
   </div>
 </div>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Кімната</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Тур</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Контакти</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Мерч</a>
-</div>
 
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-  <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
-    <img src="images/Kimnata1.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-    
-    </div>
+
+
+<div class="services-container">
+  <div class="service-card">
+      <div class="icon">
+          <img src="data:image/png;base64,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" alt="XBOX">
+      </div>
+      <h3>XBOX</h3>
   </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="images/Kimnata2.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-         
-    </div>
+  <div class="service-card">
+      <div class="icon">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABYUlEQVR4nO2WvyuFURjHP1cGSkpGFv4Do2zEaiGy+jHe9Y43g0kGJSllNVBKstgoCZnUzSCT/U66IldHz1vv8r7OOfe9uun7qafu8O37PN/znu5zQAghhBBCCCGE+HesRdQU0O3h7TSTwGqGz3JKOxs5i6sJZ/AcWA2gCdwC/Tkh+oAb0zYyvGop/bVp6xEzVWO+4DDwak03cnRV0zjtkIdvEmSLP+TAmp7naM5M47R0YpBB4MWabuboLkyz5+l7Zfr9VoZbBE6Ae4+qW8OahSoqSHIVP4EHjznugENgOjEom8E7sAtUPGoe6P1lsNAgJWDOs3/FQnxZLZC6JusUS2iQGHasxyOWqGmnXCSX5rtN+1hJ/WX//Cg6yBjwZr5LtIcB22Wux2krQUoZy8ld1Q/zPAK6PP2OA5dgclBPwAipNT8afCbZTwb39BgP9Ip5oswAPRFzCyGEEEIIIYQQdDjfuRynV8vSHK0AAAAASUVORK5CYII=" alt="PS5">
+      </div>
+      <h3>PS5</h3>
   </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="images/Kimnata3.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      
-    </div>
+  <div class="service-card">
+      <div class="icon">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEPklEQVR4nO2Zy29VRRzHPxbhktDHChNFW4pUl0itCxKBRB4rhcSFyj9gYOcGYaGw8hFgaQQKIWwEE+VZVyaYFggxATYmIAsUCrShoEQeQdqmXPJLvpP8cnKe5d577qLfZHIyc34z5/ed+T1m5sAMZlAa1gD7gCvAI6DaoPII+BPoB1Y/D4E3gKEGKp5VBoGeoiRWAPc0wBjwBfAWMI/GYR6wVN++I13+BZYXWYlA4iegjfLRDhxxZBbn6TTkSLxA86DFkfktj2MHc2qGlYiiw5nZKlKwT0Jml/VAJ7AVOAOMAuPACHAa2AK8lmOMbdJxb5rQFQktobaYC+wCnmREpv+BHUAlZaylkrXQnIgHEqqlWb0E/K5xp4AfgPeBl4HZen4AHNJ7kzsHzE8Yr00ypmsiwszUciUCib80m2nolVwgU5munrUmssuRCDO8UPZ9E5jQc4/awwr+rX7f0gREOuUTU24l1jrzjRZrt6hpeFv9zGdeLZvIVo1lPmHodiROAH3K3vY8qfb7QJfkD6vt87KJnNFY5tjInAKJOAQyu1Vfp/pQ2URGNZZFJeQLVZlNHN7R+2HVX1F9pGwi4xprTqTemhFWn6heidRLIzIWWZEbOVfkemRFbjWLj1iyQyG2Kl+Iw4Def6/6encOKZXIN5E90UIXtQa0Aq16Drio1Sn5H5shas2Xk9pYm137Gikbl0esPRxp+5RHHpeZR+wM84vGMfOaFXnfpRA7rAAwLHMKK2GZ/Zr6fz1dPavOHEJiKorPNMY9p1xe9LntyVkX8ZL0TMRBYFJC49Mg1Ou26h/GvP9UTr9OUWmOnuvlE1OORNLuNxcRdFMRJdTvNnUvAhtkPmOSuy2HvRqJPP5k93PGWcTKY5lT0krkJtKTQsh2qvuBCxnK/KHtu1+lQPA/7YhPi/yEgsKgotOCrFnOS2RSyqcRsvIU2Cmzq8gXNgEHgNdd303awVY1AYtyKpqF3M6eh9BExOQ8Wt3u1cp3GcfXuhGZKEhoh46tAV+53PBRDQkUJtItfyhCyDJ5wEaXweuBatGEGAg9TSG0LGZz16U2c+h6oDrdzB5mfTJC6E1gZcy5oeJCd1MRGVX7Sl3iBZPzxcJqdEXiDkWlEjmpdsvMKFLt0anvrkjMjoRdkz9eW/2fn8gGtV9LOeH5m/NhyX9MkxFpAS7q3a9SNg7tem9y59WvFCIPUq5MF7nj63WF2E7ti0JmDysxlpAoa4H2PFem4RLb/k7FoTvHXuu85OqFXn3ncppQv4S+TJExc/lE91Mj7tfAcflEvcwpYLt0tGCTiNUSupPiB2WiQ1HSdHwvS3hQgkcaMLtF0AIck26n8nTo0Q/HQMZmoWx0AEel0z+Ro0Iqljsyd/W7qzdHDqkl2vTNbc6cjMS7RQdarL+n1SYpp4qsRBxW6RLCwt3DBir+ELik6JTp2DOYAfXBMxvKWalU12ByAAAAAElFTkSuQmCC" alt="Steam">
+      </div>
+      <h3>Steam</h3>
   </div>
-
-<!-- The Band Section -->
-
-    <style>
-      .w3-quarter {
-        width: 25%;
-        padding: 0 8px;
-      }
-      .w3-quarter img {
-        display: block;
-        width: 100%;
-        height: auto;
-        border-radius: 5px;
-        object-fit: cover;
-      }
-    </style>
-    
-    <div class="w3-row w3-padding-32">
-      <div class="w3-quarter">
-        <p> <h1>Chechotka Andrii</h1></p>
-        <img src="images/Чеч.jpg" alt="image">
+  <div class="service-card">
+      <div class="icon">
+          <img src="data:image/png;base64,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" alt="Ubisoft">
       </div>
-      <div class="w3-quarter">
-
-        <p> <h1>Rybalkin Oleksii</h1></p>
-        <img src="images/Риб.jpg" alt="image">
-
-        <p>Rybalkin Oleksii</p>
-        <img src="images/Ри.jpg" alt="image">
-
-      </div>
-      <div class="w3-quarter">
-        <p> <h1>Ryzhikov Kostiantyn</h1></p>
-        <img src="images/Риж.jpg" alt="image">
-      </div>
-      <div class="w3-quarter">
-        <p> <h1>Kovalchuk Oleksii</h1></p>
-        <img src="images/Ков.jpg" alt="Random Name">
-      </div>
-    </div>
-    
-    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-      <h2 class="w3-wide">Dragon Kingdom</h2>
-      <p class="w3-opacity"><i>Про нас</i></p>
-      <p class="w3-justify">Найкраща кімната в гуртожитку під номером 14 - це простір, де студенти можуть відчути затишок та комфорт для навчання та відпочинку. Вона оформлена з урахуванням потреб молодого покоління, зручні меблі, освітлення та організація простору дозволяють створити сприятливу атмосферу для концентрації та творчості. Наша кімната - це не лише місце для проживання, але й місце для розвитку, спілкування та відкриття нового.</p>
-  
-
-  <!-- The Tour Section -->
-  <!-- <div class="w3-black" id="tour">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">КОЛИ МИ ВІЛЬНІ</h2>
-      <p class="w3-opacity w3-center"><i>Не забудьте забронювати наш час!</i></p><br>
-
-      <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">Субота<span class="w3-tag w3-red w3-margin-left">Зайнято</span></li>
-        <li class="w3-padding">Неділя <span class="w3-badge w3-right w3-margin-right">19:00-21:30</span></li>
-        <li class="w3-padding">Будні дні  <span class="w3-badge w3-right w3-margin-right">17:00-21:30</span></li>
-      </ul> -->
-    
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <img src="images/Товар1.jpg" alt="Тарілка" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Піти в паті</b></p>
-            <p class="w3-opacity">>> 50₴</p>
-            <p>Неперевершені бої чекають на вас! </p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Купити
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="images/Товар2.jfif" alt="Голубці" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>25 ранг</b></p>
-            <p class="w3-opacity"> >> 100₴</p>
-            <p>Граєте велику кількість часу та не можете апнути 25-й ранг? Не проблема! Команда дракона допоможе вам у важку хвилину. Всього мить і ранг у вас в руках!</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Купити</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="images/Товар3.webp" alt="Жижа" style="width:100%;" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Залляти рідини</b></p>
-            <p class="w3-opacity"> >> 40₴</p>
-            <p>На вас очікує сюрприз смак! Та особиса зустріч з командою.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Купити</button>
-          </div>
-        </div>
-      </div>
-    </div>
+      <h3>Ubisoft</h3>
   </div>
-
-  <!-- Ticket Modal -->
-  <div id="ticketModal" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
-       class="w3-button w3-teal w3-xlarge w3-display-topright">&times;</span>
-        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Товар</h2>
-      </header>
-      <div class="w3-container">
-        <p><label><i class="fa fa-shopping-cart"></i> Купити</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="Кількість">
-        <p><label><i class="fa fa-user"></i> Кому</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="Пошта">
-        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">ОПЛАТИТИ <i class="fa fa-check"></i></button>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Закрити <i class="fa fa-remove"></i></button>
-        <p class="w3-right">Потрібна <a href="#" class="w3-text-blue">допомога?</a></p>
-      </div>
-    </div>
-  </div>
-
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">КОНТАКТИ</h2>
-    <p class="w3-opacity w3-center"><i>Напишіть нам!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Рівненьска обл. Острог<br>
-        <i class="fa fa-phone" style="width:30px"></i> Телефон: +380-98-425-6897<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Пошта: kostiantyn.ryzhykov@oa.edu.ua<br>
-      </div>
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Ім'я" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Пошта" required name="Email">
-            </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Повідомлення" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">Відправити</button>
-        </form>
-      </div>
-    </div>
-  </div>
-  
 </div>
 
 
-<!-- Image of location/map -->
-<div style="width:100%; height:400px;">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2546.755568465965!2d26.49508477639636!3d50.33381137157011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472f01002a91ff3d%3A0xf4990c856a81398c!2sDragon%20Kingdom!5e0!3m2!1suk!2sua!4v1714244517381!5m2!1suk!2sua" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+
+
+
+<hr class="separator" /> <!-- just a spacer by default -->
+
+<hr class="separator separator--line" />
+
+<hr class="separator separator--dots" />
+
+<hr class="separator separator--dotter" />
+
+
+
+
+
+
+
+<article>
+  <hr class="sep-2"/>
+  <h1>The Basics of Dota 2: What Every Beginner Should Know</h1>
+  <p>Dota is one of the most popular multiplayer online battle arena (MOBA) games, featuring two teams of five players each. The primary goal is to destroy the enemy's Ancient, the central structure in their base, while defending your own. Each player controls a unique hero with special abilities, chosen from a roster of over 120 characters. Beginners should focus on understanding game mechanics, mastering hero abilities, and cooperating with teammates to achieve victory.</p>
+  <hr class="sep-2"/>
+  <h2>The Meta in Dota 2: Patch Trends and How to Adapt</h2>
+  <p>With every new patch, Dota 2’s meta evolves, influencing hero popularity and team strategies. Patches adjust hero stats, item functionalities, and gameplay mechanics, often shaking up the game’s balance. Some patches favor aggressive playstyles with burst-damage heroes, while others reward defensive strategies with supports. Staying updated on patch notes and analyzing trends can help you select the most effective heroes and refine your gameplay style to stay ahead of the competition.</p>
+  <hr class="sep-2"/>
+  <h3>Team Roles in Dota 2: Are You a Carry, Support, or Offlaner?</h3>
+  <p>Each player in Dota 2 has a specific role that contributes to the team’s success. Carries focus on farming early and dealing massive damage in the late game. Supports assist allies by providing vision, healing, and disabling enemies. The midlaner dominates the central lane, offlaners handle tougher lanes while creating space for their team, and junglers farm neutral creeps to gain resources. Choosing the right role depends on your playstyle, strengths, and the needs of your team.</p>
+  <hr class="sep-2"/>
+  <h4>Best Heroes to Climb the Ranks in Dota 2</h4>
+  <p>To boost your MMR, pick heroes that dominate the current meta. Mobile heroes like Queen of Pain or Puck excel at ganking and map control. Late-game carries such as Terrorblade or Spectre can secure victories with their scaling power. For supports, picks like Lion or Crystal Maiden offer strong crowd control and utility. Focus on mastering a few key heroes to maximize your performance and adapt to different match scenarios.</p>
+    <hr class="sep-2"/>
+    <h4>Dota 2 Tournaments: Preparing for the Pro Scene</h4>
+  <p>Dota 2 esports is a multi-million dollar industry, with prestigious tournaments like The International. Preparing for the pro scene requires rigorous practice, honing teamwork, and developing strategic depth. Study professional team replays, participate in regional tournaments, and work with coaches to refine your skills. Mental toughness is also critical, as competitive Dota can be intense and high-pressure. Consistency, adaptability, and dedication are the keys to making it in the professional arena.</p>
+</article>
+<hr class="separator" /> 
+
+<hr class="separator separator--line" />
+
+<hr class="separator separator--dots" />
+
+<hr class="separator separator--dotter" />
+
+
+
+
+<div class="eleven">
+  <h1>Our partners</h1>
+</div>
+
+<div class="qqq">
+  <div class="qqq-card">
+      <div class="qwicon">
+          <img src="https://www.stalker2.com/stalker2/partners/sega.png" alt="XBOX">
+      </div>
+      <h3>SEGA</h3>
+  </div>
+  <div class="qqq-card">
+      <div class="qwicon">
+          <img src="https://avatars.akamai.steamstatic.com/ea7ce77e2bafbc811a9a5242f31405871baa2fcb_full.jpg" alt="PS5">
+      </div>
+      <h3>4DIVINITY</h3>
+  </div>
+  <div class="qqq-card">
+      <div class="qwicon">
+          <img src="https://powerups.es/wp-content/uploads/2022/08/plaion.jpg" alt="Steam">
+      </div>
+      <h3>PLAION</h3>
+  </div>
+  <div class="qqq-card">
+      <div class="qwicon">
+          <img src="https://www.stalker2.com/stalker2/partners/erc.png" alt="Ubisoft">
+      </div>
+      <h3>ERC</h3>
+  </div>
 </div>
 
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://t.me/shakk1n" target="_blank">@shakk1n</a></p>
+
+<footer>
+  <div class="footer-container">
+      <div class="footer-about">
+          <h4 class="qweqwe">Project</h4>
+          <p>Our project takes you to a world of adventure and unforgettable stories. Join the gaming community!</p>
+      </div>
+      <div class="footer-links">
+          <h4 class="qweqwe">Fast link</h4>
+          <ul>
+              <li><a>About</a></li>
+              <li><a>Speciality</a></li>
+              <li><a>Fandom</a></li>
+              <li><a>Chat</a></li>
+          </ul>
+      </div>
+      <div class="footer-social">
+          <h2 class="qweqwe">Contact us</h2>
+          <ul>
+              <li><a href="https://t.me/shakk1n" target="_blank">Telegram</a></li>
+              <li><a href="https://instagram.com/shakk1n" target="_blank">Instagram</a></li>
+              <li><a href="https://www.youtube.com/@vladi4ok1996" target="_blank">YouTube</a></li>
+          </ul>
+      </div>
+      <div class="footer-copyright">
+          <p>&copy; 1999 Valve.</p>
+      </div>
+  </div>
 </footer>
 
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2500);    
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-
 </body>
+
 </html>
